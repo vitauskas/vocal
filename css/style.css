@@ -1,0 +1,555 @@
+/* --- font connection --- */
+
+@font-face {
+  font-family: 'Circe 300';
+  src: url('../fonts/Circe-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Circe-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Circe-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Circe-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Circe-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Circe 400';
+  src: url('../fonts/Circe-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Circe-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Circe-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Circe-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Circe-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Circe 700';
+  src: url('../fonts/Circe-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Circe-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Circe-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Circe-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Circe-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Circe 900';
+  src: url('../fonts/Circe-ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Circe-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Circe-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Circe-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Circe-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* --- specification --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Circe 400';
+    color: #22241b;
+    font-size: 14px;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p, div, span, input, button, a, form {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    -letter-spacing: 0.02em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Circe 900';
+    text-transform: uppercase;
+    letter-spacing: 0.12em; 
+}
+
+h1 {
+    font-size: 49px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 37px;
+    color: #22241b;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    color: #888886;
+    margin-bottom: 35px; 
+}
+
+section {
+    -padding-bottom: 90px;
+    padding: 90px 0;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+input, input:hover, input:avtive,
+button, button:hover, button:active {
+    outline: none;
+} 
+
+.container-fluid_plain {
+  padding: 0;
+}
+
+/*header*/
+
+.header {
+  background: #18171d url(../img/header-bg.jpg) no-repeat center top / cover;
+  -height: 500px;
+}
+
+.header-overlay {
+  background: rgba(22,23,33,0.64);
+  -height: 500px;
+  padding: 25px 0 60px;
+}
+
+.logo {
+  color: #fff;
+  -text-transform: uppercase;
+}
+
+.logo-img {
+  width: 30px;
+}
+
+.offer {
+
+}
+
+.offer__title {
+  margin-top: 150px;
+  text-shadow: 2px 2px 2px #000; color: #f9f5ed;
+}
+
+.offer__desc {
+  font-size: 21px;
+  color: #fff;
+  width: 377px;
+  margin-top: 35px;
+  letter-spacing: 0.1em;
+  margin-bottom: 120px;
+}
+
+.nav {
+  
+}
+
+.nav__menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+/*.nav__item a {
+  color: #fff;
+  font-size: 18px;
+}*/
+
+/*эксперимент*/
+
+/*nav {
+  width: 100vw;
+}*/
+
+ul {
+  /*padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -justify-content: space-around;
+  -ms-align-items: center;
+  -align-items: center;
+  -justify-content: flex-end;*/
+}
+
+li {
+  list-style: none;
+  height: 30px;
+  width: 120px;
+  overflow: hidden;
+}
+
+li>span {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+li>span:nth-child(1) {
+  color: #fff;
+
+}
+
+li>span:nth-child(2) {
+  background: #fff;
+  color: #000;
+  
+}
+
+li:hover span {
+  transform: translateY(-100%);
+  
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.indicator {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+.indicator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  animation: animate 1s linear infinite;
+}
+
+.indicator span:nth-child(1) {
+  top: -10px;
+  left: -10px;
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.indicator span:nth-child(2) {
+  top: -5px;
+  left: -5px;
+  -webkit-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.indicator span:nth-child(3) {
+  top: 0px;
+  left: 0px;
+  -webkit-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.indicator span:nth-child(4) {
+  top: 5px;
+  left: 5px;
+  -webkit-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.indicator span:nth-child(5) {
+  top: 10px;
+  left: 10px;
+  -webkit-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@keyframes animate {
+  0% {
+    border-color: #fff;
+    -transform: translate(0,0);
+  }
+  20% {
+    border-color: #fff;
+    -transform: translate(5px,5px);
+  }
+  20.1%,100% {
+    border-color: #5F5B62;
+  }
+}
+
+/*about*/
+
+.about {
+  -padding-top: 90px;
+}
+
+.about-photo {
+  background: url(../img/tsymbalova.jpg) no-repeat center center;
+  height: 380px;
+}
+
+.about-content {
+  background: #E4E4E4;
+  -height: 380px;
+  padding: 90px 0 74px 85px;
+}
+
+.about-content__title {
+
+}
+
+.about-content__text {
+  width: 500px;
+}
+
+/*lessons*/
+
+.lessons {
+  padding-bottom: 150px;
+}
+
+.lessons__title {
+
+}
+
+.question {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.question__icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  background: #EECEF0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  -box-shadow: inset -3px -3px 5px 0px rgba(0,0,0,0.75);
+  -box-shadow: inset 0px 0px 25px 1px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 22px #31272769;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+}
+
+-.question__icon:hover {
+  box-shadow: inset 3px 3px 2px 0px rgba(0,0,0,0.3);
+}
+
+.flaticon-hiring:before,
+.flaticon-play-button:before,
+.flaticon-violin:before {
+  font-size: 35px;
+  color: #191823;
+  font-weight: 400;
+  margin-left: 0;
+  -margin-right: 20px;
+
+}
+
+.question__content {
+  width: 245px;
+}
+
+.question__title {
+  font-family: 'Circe 700';
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.question__desc {
+  font-family: 'Circe 300';
+  font-size: 16px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+/*sign*/
+
+.sign {
+  background: url(../img/sign_01.jpg) no-repeat center center / cover;
+}
+
+/*.sign-overlay {
+  background: rgba(24,23,34,0.7);
+}*/
+
+.sign__title {
+  -margin: 50px 0 35px;
+  color: #45f3ff;
+}
+
+.wrap {
+  -background: #181722;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  -padding: 30px 0;
+}
+
+.form__box {
+  margin: 30px 0 10px;
+  position: relative;
+  display: block;
+  -width: 100%;
+  height: 40px;
+  color: #45f3ff;
+  transition: 0.5s;
+}
+
+.form__input, 
+.form__text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  position: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.form__desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.form__box input:focus + .form__desc,
+.form__box input:valid + .form__desc {
+  top: -35px;
+  left: -10px;
+}
+
+.form__line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.form__box input:focus ~ .form__line,
+.form__box input:valid ~ .form__line {
+  height: 100%;
+}
+
+.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.form__box textarea {
+  height: 100%;
+  resize: none;
+}
+
+.form__text {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  position: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.form__box textarea:focus + .form__desc,
+.form__box textarea:valid + .form__desc {
+  top: -35px;
+  left: -10px;
+}
+
+.form__box textarea:focus ~ .form__line,
+.form__box textarea:valid ~ .form__line {
+  height: 100%;
+}
+
+/*contact*/
+
+.contact {
+
+}
+
+.map {
+
+}
+
+.adress {
+  background: url(../img/compass_4.png) no-repeat center center / cover;
+  width: 500px;
+}
